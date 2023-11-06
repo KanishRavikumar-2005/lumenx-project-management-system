@@ -1,0 +1,286 @@
+:root {
+    --white: #FFFFFF;
+    --gray: #D5E2D9;
+    --blue: #495F6D;
+    --green: #85C669;
+}
+
+@font-face {
+  font-family: 'Jost';
+}
+body{
+  font-family: Jost;
+}
+*{
+  box-sizing: border-box;
+}
+leftbar{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  background: var(--gray);
+  width: 250px;
+}
+imagebox{
+  display: flex;
+  /* border: solid; */
+  justify-content: center;
+  
+}
+.titleImg{
+  width: 80%;
+  padding-top: 10px;
+}
+navigator{
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  border-style: solid;
+  padding: 10px;
+  margin: 5px;
+  border-width: 0px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.item:hover{
+  border-width:2px;
+  border-color: var(--green);
+}
+
+icon{
+  font-size: 20px;
+}
+
+itext{
+  font-size: 19px;
+  margin-left: 5px;
+}
+
+.current{
+  background: var(--blue);
+  color: var(--gray);
+}
+
+mainbox{
+  position: absolute;
+  left: 260px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-style: solid;
+  background: var(--white);
+  padding: 10px;
+  border-width: 0px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+.add{
+  width: 60%;
+}
+
+.mainInp{
+  isplay: block;
+  margin-bottom: 10px;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  height: 35px;
+  border-radius: 3px;
+  border-color: var(--green);
+  outline: none;
+  color: var(--blue);
+  padding-left: 10px;
+}
+
+.textarea{
+  resize: vertical;
+  height: 100px;
+  font-family: Jost;
+  color: var(--blue);
+}
+
+
+.mainBtn{
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  height: 35px;
+  border-radius: 3px;
+  border-color: var(--green);
+  background-color: var(--white);
+  outline: none;
+  color: var(--blue);
+  padding-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.mainBtn:hover{
+  background-color: var(--green);
+  color: var(--white);
+  transition: transform 0.5s ease;
+  transition: background-color 0.5s ease;
+
+}
+
+.announcements{
+  border-style: solid;
+  height: 400px;
+  border-width: 0px;
+  overflow-y: scroll;
+  
+}
+
+.announcements::-webkit-scrollbar{
+  width: 10px;
+}
+
+.announcement{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  border-color: var(--blue);
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.announcement .title{
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  color: var(--blue);
+}
+.announcement .desc{
+  display: block;
+}
+
+.announcement .datetime{
+  display: block;
+  font-size: 14px;
+  color: var(--blue);
+}
+
+.announcement .user{
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.announcement .admin{
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: #47ec007d;
+}
+.heads{
+  color: var(--blue);
+}
+
+.h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-box {
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.bannerImg{
+  width: 60%;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+}
+.login-elements{
+  width: 100%;
+}
+.loginInp{
+  display: block;
+  margin-bottom: 10px;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  height: 35px;
+  border-radius: 3px;
+  background: var(--gray);
+  border-color: var(--gray);
+  outline: none;
+  color: var(--blue);
+  padding-left: 10px;
+}
+
+.loginBtn{
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  height: 35px;
+  border-radius: 3px;
+  background: var(--blue);
+  border-color: var(--blue);
+  outline: none;
+  color: var(--gray);
+  padding-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+  .add{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  leftbar{
+    width: 50px;
+    border-radius: 3px;
+  }
+  mainbox{
+    left: 60px;
+  }
+  
+  itext{
+    display: none;
+  }
+  .titleImg{
+    width: 50px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 410px){
+  .login-box{
+    width: 100%;
+  }
+  .center{
+    position: absolute;
+    width: 100%;
+  }
+  .bannerImg{
+    width: 90%;
+    transition: width 0.5s ease;
+  }
+}
