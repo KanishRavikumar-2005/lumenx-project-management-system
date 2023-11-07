@@ -1,3 +1,6 @@
+
+![image-removebg-preview (31)](https://github.com/KanishRavikumar-2005/lumenx-project-management-system/assets/85105070/c6596022-898e-4ca4-a767-7af4d2f41453)
+
 # Lumənɛks Project Management System
 
 > NOTE:
